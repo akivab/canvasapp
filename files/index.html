@@ -1,0 +1,49 @@
+<html>
+  <head>
+    <meta name="viewport"
+    content="width=device-width,height=device-height,user-scalable=0,minimum-scale=1.0,maximum-scale=1.0">
+    <script src="./script.js"></script>
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <h3 id='title'></h3>
+    <canvas id="canvas"></canvas>
+    <div id="chooser">
+      <div id="color">
+        <p>Alpha</p>
+        <div id="alpha_picker">
+          <div id="alpha1"></div>
+          <div id="alpha3"></div>
+          <div id="alpha8"></div>
+        </div>
+        <p>Color</p>
+        <div id="color_picker">
+          <div id="red"></div>
+          <div id="green"></div>
+          <div id="yellow"></div>
+          <div id="purple"></div>
+          <div id="orange"></div>
+          <div id="blue"></div>
+          <div id="black"></div>
+          <div id="white"></div>
+        </div>
+        <p>Size</p>
+        <div id="size_picker">
+          <div id="size1"></div>
+          <div id="size4"></div>
+          <div id="size7"></div>
+        </div>
+      </div>
+      <a class='btn' id='close_chooser'><i class='icon-ok-circle'></i> Close</a>
+    </div>
+    <div id="options">
+      <a class='btn btn-info' id="brush"><i class="icon-tint icon-white"></i> Color</a>
+      <a class='btn btn-info' id="upload"><i class="icon-upload icon-white"></i> Upload</a>
+      <a class='btn btn-info' id="undo"><i class="icon-step-backward icon-white"></i>
+        Undo</a>
+      <a class='btn btn-info' id="open"><i class="icon-folder-open icon-white"></i> Open</a>
+
+    </div>
+  </body>
+</html>
