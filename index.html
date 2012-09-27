@@ -1,12 +1,14 @@
-<html>
+<html manifest="manifest.appcache">
   <head>
     <meta name="viewport"
     content="width=device-width,height=device-height,user-scalable=0,minimum-scale=1.0,maximum-scale=1.0">
-    <script src="./script.js"></script>
+    <script src="jquery.min.js"></script>
+    <script src="script.js"></script>
     <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="style.css" />
   </head>
   <body>
+    <div id='alert_bar'> </div> 
     <h3 id='title'></h3>
     <canvas id="canvas"></canvas>
     <div id="chooser">
@@ -38,7 +40,7 @@
       <a class='btn' id='close_chooser'><i class='icon-ok-circle'></i> Close</a>
     </div>
     <div id="options">
-      <a class='btn btn-info' id="brush"><i class="icon-tint icon-white"></i> Color</a>
+      <a class='btn btn-info' id="brush"><i class="icon-tint icon-white"></i> Brush</a>
       <a class='btn btn-info' id="upload"><i class="icon-upload icon-white"></i> Upload</a>
       <a class='btn btn-info' id="undo"><i class="icon-step-backward icon-white"></i>
         Undo</a>

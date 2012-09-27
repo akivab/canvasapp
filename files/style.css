@@ -2,6 +2,10 @@
   vertical-align: middle;
 }
 
+#title {
+  padding-left: 10px;
+}
+
 #color > div > div {
   border-radius:15px;
   width:30px;
@@ -29,13 +33,13 @@
   visibility: hidden;
 }
 
-#color > * {
-  clear: both;
+#options {
+  position: fixed;
+  bottom: 10px;
 }
 
-#options {
-  position: absolute;
-  bottom:10px;
+#color > * {
+  clear: both;
 }
 
 .selected {

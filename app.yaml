@@ -3,6 +3,21 @@ version: 1
 runtime: python
 api_version: 1
 
+default_expiration: "0m"
+
 handlers:
-- url: /f
-  static_dir: files
+
+- url: /(.*\.appcache)
+  static_files: files/\1
+  mime_type: text/cache-manifest
+  upload: files/(.*\.appcache)
+
+- url: /bootstrap
+  static_dir: files/bootstrap
+
+- url: /(.*\.(js|css|ico))
+  static_files: files/\1
+  upload: files/(.*\.(js|css|ico))
+
+- url: /.*
+  script: index.py
